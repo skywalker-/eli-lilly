@@ -1,0 +1,62 @@
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -8px;
+
+    #header {
+        height: 80px;
+        color: white;
+        font-size: 24px;
+        background-color: #3c3cc1;
+
+        span {
+            height: 50px;
+            padding-left: 50px;
+            vertical-align: middle;
+        }
+    }
+
+    #optionSelection {
+        height: 50px;
+        padding: 15px 0 0 50px;
+        background-color: #dcdcdc;
+
+        select {
+            outline: none;
+        }
+    }
+
+    #globalData {
+        height: 200px;
+        margin: 20px 0 0 65px;
+
+        .section-text {
+            font-weight: bold;
+            padding-top: 15px;
+
+            &:nth-child(2) {
+                @media only screen and (max-width: 700px) {
+                    display: none;
+                }
+            }
+            
+            #growthLineChart {
+                width: 96%;
+                height: 80%;
+            }
+        }
+
+        #globalPopulation, #globalGrowth {
+            border: 1px solid black;
+        }
+        #globalGrowth {
+            border-left: none;
+        }
+    }
+    .growth-vs-density {
+        margin: 20px 0 0 65px;
+        #scatterPlotChart {
+            height: 400px;
+        }
+    }
+}

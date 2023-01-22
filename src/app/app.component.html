@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eli Lilly Population Evolution Representation</title>
+  </head>
+  <body>
+    <div id="header">
+      <span>Eli Lilly</span>
+    </div>
+    <div id="optionSelection">
+      <select id="selectYear" (change)="prepareGrowthVsDensityChart($event)">
+        <option *ngFor="let year of populationYears; let i = index" [value]="year">Year: {{year}}</option>
+      </select>
+    </div>
+    <div class="row">
+      <div id="globalData" class="col-sm-6 row">
+        <div id="globalPopulation" class="col-sm-4 section-text">
+          <span>World Population<br>(2021)</span>
+          <h2 style="margin-top: 70px"><strong>{{latestPopulation}}</strong></h2>
+        </div>
+        <div id="globalGrowth" class="col-sm-8 section-text">
+          <span>Population Growth</span>
+          <div id="growthLineChart"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row growth-vs-density">
+      <h4><strong>Population Growth vs Density Correlation</strong></h4>
+      <div class="col-sm-12">
+        <div id="scatterPlotChart" class="col-sm-6"></div>
+      </div>
+    </div>
+  </body>
+</html>
