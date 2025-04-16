@@ -1,20 +1,26 @@
-# EliLilly
+# Eli Lilly Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0 and Node.js v18.12.0.
+A TypeScript-based web application built as part of a proof-of-concept or internal dashboard for Eli Lilly (assumed context). This project is designed with modularity, scalability, and performance in mind using modern frontend technologies.
 
-## Development server
+## 🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-CSV Data file is kept inside src/assets/ to read and populate data on the web.
+- Responsive dashboard layout
+- Component-driven architecture
+- API integration and dynamic rendering
+- Real-world design use case (pharma or enterprise)
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- TypeScript
+- Angular
+- CSS/SCSS modules
+- Axios / Fetch for API calls
+- Webpack
 
-## Build
+## 📦 Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/skywalker-/eli-lilly.git
+cd eli-lilly
+npm install
+npm run dev
